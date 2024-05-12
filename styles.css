@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --dark-blue: #051d3b;
+  --white: #fafafa;
+  --font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 80px;
+  background-color: var(--dark-blue);
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: ;
+}
+
+.navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .logo img {
+  width: 100%;
+  max-width: 70px;
+  min-width: 50;
+  max-height: 50;
+}
+
+.menu {
+  height: 100%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.menu ul li {
+  margin: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.menu ul li:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--font-family);
+}
+
+/* ****************************************************** */
+
+.hero_section {
+  height: calc(100vh - 80px);
+  background-color: pink;
+  background-image: url(./everest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  opacity: 0.85;
+  mix-blend-mode: hard-light;
+}
+.hero_section * {
+  z-index: 1;
+  position: relative;
+}
+.hero_section-text h1 {
+  font-family: var(--font-family);
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  color: var(--white);
+  line-height: 1;
+}
+
+.hero_section-text h1 span {
+  display: block;
+  font-weight: 700;
+}
+.hero_section-more {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.hero_section-more p {
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  color: var(--white);
+}
+/* ************************************************ */
+
+.about_section {
+  padding: 100px 100px;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section_title {
+  font-family: va(--font-family);
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bluetitle {
+  color: var(--dark-blue);
+}
+
+.whitetitle {
+  color: var(--white);
+}
+.section_title span {
+  font-weight: 700;
+}
+
+.about_section p {
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: var(--dark-blue);
+  text-align: center;
+  line-height: 1.5;
+}
